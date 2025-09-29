@@ -21,6 +21,10 @@ graph TD
     UC3 --> Bank[(Bank Server)]
 ```
 
+## Sequence: Withdraw Cash
+Mô tả chi tiết luồng thông điệp giữa Customer, ATM và Bank Server.
+
+
 ```mermaid
 sequenceDiagram
     participant C as Customer
@@ -41,3 +45,8 @@ sequenceDiagram
     ATM->>C: Dispense Cash
     ATM->>C: Print Receipt
 ```
+
+## Giải thích
+- Customer: người thao tác trực tiếp.
+- ATM: trung gian nhận yêu cầu và giao tiếp với hệ thống ngân hàng.
+- Bank Server: xác thực và xử lý giao dịch.
